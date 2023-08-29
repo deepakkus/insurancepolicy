@@ -1,0 +1,41 @@
+﻿@media screen {
+    h2 {
+        text-align: center;
+        background-color: #222222;
+        color: #FFFFFF;
+    }
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .table th {
+        padding-left: 10px;
+        text-align: left;
+    }
+    .table td {
+        padding: 6px 10px 6px 10px;
+    }
+    hr {
+        width:70%;
+        margin-left:0;
+    }
+}
+
+@media print {
+    body {
+        font-size: 10pt;
+    }
+    h2 {
+        text-align: center;
+    }
+    .table {
+        width: 100%;
+        font-size: x-small;
+    }
+    .table th {
+        text-align: left;
+    }
+    hr {
+        width:100%;
+    }
+}

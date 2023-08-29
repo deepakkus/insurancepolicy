@@ -1,0 +1,31 @@
+﻿#formPhotos {
+    width: 98%;
+    background-color: #FCF8D9;
+    border: 1px solid #FFDA71;
+    border-radius: 3px;
+    padding: 10px 10px 0px 10px;
+}
+#formPhotos form {
+    border: none;
+}
+#formPhotos select {
+    width: 93%;
+}
+#formPhotos input[type=text] {
+    width: 90%;
+}
+#formPhotos .container {
+    display: table;
+    width: 100%;
+    padding-top: 5px;
+}
+#formPhotos .leftColumn {
+    display: table-cell;
+    width: 50%;
+    vertical-align: top;
+}
+#formPhotos .rightColumn {
+    display: table-cell;
+    width: 50%;
+    vertical-align: top;
+}

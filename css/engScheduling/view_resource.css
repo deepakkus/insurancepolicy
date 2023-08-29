@@ -1,0 +1,56 @@
+﻿body {
+    margin: 20px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    background-color: #ffffff;
+}
+#resourceOrderWrapper {
+    margin: 20px auto 40px auto;
+}
+#resourceOrderWrapper table {
+    width: 850px;
+    font: 13px arial,sans-serif;
+    font-weight: bold;
+    border-collapse: collapse;
+    margin: 0 auto 25px auto;
+    vertical-align: middle;
+    text-align: center;
+}
+#resourceOrderWrapper table td {
+    border: 1px solid #000000;
+}
+#resourceOrderWrapper table td.border-none {
+    border: none;
+}
+#resourceOrderWrapper .headers td {
+    padding: 6px 4px 6px 4px;
+}
+#resourceOrderWrapper .information td {
+    font-size: 15px;
+    padding: 10px 8px 10px 8px;
+}
+#resourceOrderWrapper div {
+    width: 830px;
+    margin: 10px auto 25px auto;
+    padding: 10px;
+    border: 1px solid #000000;
+    font: 13px arial,sans-serif;
+    font-weight: bold;
+}
+#resourceOrderWrapper div span {
+    font-size: 14px;
+}
+#resourceOrderWrapper .engine-info {
+    font-size: 14px;
+}
+#resourceOrderWrapper .engine-info tr th {
+    width: 1%;
+    white-space: nowrap;
+    text-align: right;
+}
+#resourceOrderWrapper .engine-info tr td {
+    border: none;
+    text-align: left;
+}

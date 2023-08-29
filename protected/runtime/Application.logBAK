@@ -1,0 +1,263 @@
+2019/02/11 12:58:22 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Error converting data type varchar to float.. The SQL statement executed was: 
+            DECLARE @perimeter geography = (SELECT l.geog FROM res_perimeters p INNER JOIN location l ON p.perimeter_location_id = l.id WHERE p.id = :perimeterID);
+            IF @perimeter.STNumPoints() > 1000
+            BEGIN
+                SET @perimeter = @perimeter.Reduce(10);
+            END
+            DECLARE @bufferMeters float(24) = :buffer;
+            DECLARE @buffer geography = @perimeter.STBuffer(@bufferMeters)
+            DECLARE @boundingboxgeom geometry = geometry::STGeomFromWKB(@buffer.STAsBinary(), @buffer.STSrid).STEnvelope();
+
+            SELECT * FROM (
+                SELECT
+                    p.pid,
+                    p.response_status,
+                    p.coverage_a_amt,
+                    p.wds_lat lat,
+                    p.wds_long long,
+                    p.wds_geocode_level,
+                    p.wds_geocoder,
+                    p.wds_match_score,
+                    p.geog.STDistance(@perimeter) [distance],
+                    p.address_line_1,
+                    p.city,
+                    p.state,
+                    m.last_name,
+                    m.client_id,
+                    c.name as client,
+                    c.map_enrolled_color,
+                    c.map_not_enrolled_color
+                FROM properties p
+                    INNER JOIN members m ON m.mid = p.member_mid
+                    INNER JOIN client c ON c.id = m.client_id
+                WHERE p.policy_status = 'active'
+                    AND p.type_id = 1
+                    AND p.wds_geocode_level != 'unmatched'
+                    AND p.wds_lat >= @boundingboxgeom.STPointN(1).STY
+                    AND p.wds_lat <= @boundingboxgeom.STPointN(3).STY
+                    AND p.wds_long <= @boundingboxgeom.STPointN(2).STX
+                    AND p.wds_long >= @boundingboxgeom.STPointN(4).STX
+            ) s
+            WHERE s.distance <= @bufferMeters --now filter down by distance from perimeter
+            .
+2019/02/11 12:58:22 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Error converting data type varchar to float. in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\GIS.php(383): CDbCommand->queryAll()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\models\Property.php(1017): GIS::getPolicyAlert('36549', '5', NULL)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\controllers\PropertyController.php(571): Property::getGeoJson('36549', '5', NULL)
+#4 [internal function]: PropertyController->actionGetGeoJson('36549', '5', NULL)
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(PropertyController), Array)
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PropertyController), Object(ReflectionMethod), Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\filters\WDSAPIFilter.php(105): CFilterChain->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\filters\CFilter.php(38): WDSAPIFilter->preFilter(Object(CFilterChain))
+#11 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#12 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#14 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\CWebApplication.php(282): CController->run('getGeoJson')
+#19 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\CWebApplication.php(141): CWebApplication->runController('property/getGeo...')
+#20 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\inetpub\wwwroot\pro.wildfire-defense.com\index.php(15): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php?r=property/getGeoJson&perimeterID=36549&bufferDistance=5
+HTTP_REFERER=https://pro.wildfire-defense.com/index.php?r=resMonitorLog/viewMonitoredFire&id=72329&page=monitor
+---
+2019/02/11 13:00:40 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Error converting data type varchar to float.. The SQL statement executed was: 
+            DECLARE @perimeter geography = (SELECT l.geog FROM res_perimeters p INNER JOIN location l ON p.perimeter_location_id = l.id WHERE p.id = :perimeterID);
+            IF @perimeter.STNumPoints() > 1000
+            BEGIN
+                SET @perimeter = @perimeter.Reduce(10);
+            END
+            DECLARE @bufferMeters float(24) = :buffer;
+            DECLARE @buffer geography = @perimeter.STBuffer(@bufferMeters)
+            DECLARE @boundingboxgeom geometry = geometry::STGeomFromWKB(@buffer.STAsBinary(), @buffer.STSrid).STEnvelope();
+
+            SELECT * FROM (
+                SELECT
+                    p.pid,
+                    p.response_status,
+                    p.coverage_a_amt,
+                    p.wds_lat lat,
+                    p.wds_long long,
+                    p.wds_geocode_level,
+                    p.wds_geocoder,
+                    p.wds_match_score,
+                    p.geog.STDistance(@perimeter) [distance],
+                    p.address_line_1,
+                    p.city,
+                    p.state,
+                    m.last_name,
+                    m.client_id,
+                    c.name as client,
+                    c.map_enrolled_color,
+                    c.map_not_enrolled_color
+                FROM properties p
+                    INNER JOIN members m ON m.mid = p.member_mid
+                    INNER JOIN client c ON c.id = m.client_id
+                WHERE p.policy_status = 'active'
+                    AND p.type_id = 1
+                    AND p.wds_geocode_level != 'unmatched'
+                    AND p.wds_lat >= @boundingboxgeom.STPointN(1).STY
+                    AND p.wds_lat <= @boundingboxgeom.STPointN(3).STY
+                    AND p.wds_long <= @boundingboxgeom.STPointN(2).STX
+                    AND p.wds_long >= @boundingboxgeom.STPointN(4).STX
+            ) s
+            WHERE s.distance <= @bufferMeters --now filter down by distance from perimeter
+            .
+2019/02/11 13:00:40 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Error converting data type varchar to float. in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\GIS.php(383): CDbCommand->queryAll()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\models\Property.php(1017): GIS::getPolicyAlert('36549', '5', NULL)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\controllers\PropertyController.php(571): Property::getGeoJson('36549', '5', NULL)
+#4 [internal function]: PropertyController->actionGetGeoJson('36549', '5', NULL)
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(PropertyController), Array)
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PropertyController), Object(ReflectionMethod), Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\filters\WDSAPIFilter.php(105): CFilterChain->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\filters\CFilter.php(38): WDSAPIFilter->preFilter(Object(CFilterChain))
+#11 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#12 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#14 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\CWebApplication.php(282): CController->run('getGeoJson')
+#19 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\CWebApplication.php(141): CWebApplication->runController('property/getGeo...')
+#20 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\inetpub\wwwroot\pro.wildfire-defense.com\index.php(15): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php?r=property/getGeoJson&perimeterID=36549&bufferDistance=5
+HTTP_REFERER=https://pro.wildfire-defense.com/index.php?r=resMonitorLog/viewMonitoredFire&id=72329&page=monitor
+---
+2019/02/11 13:11:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Error converting data type varchar to float.. The SQL statement executed was: DECLARE @meters float(24) = :bufferDistance
+                DECLARE @perimeter geography = (SELECT l.geog FROM res_perimeters p INNER JOIN location l ON p.perimeter_location_id = l.id WHERE p.id = :perimeter_id)
+                DECLARE @buffer geography = @perimeter.STBuffer(@meters)
+                DECLARE @boundingboxgeom geometry = geometry::STGeomFromWKB(@buffer.STAsBinary(), @buffer.STSrid).STEnvelope()
+
+                SELECT * FROM (
+                    SELECT
+                        ROUND(MIN(geog.STDistance(@perimeter)) / 1609.344, 2) distance,
+                        response_status,
+                        client_id
+                    FROM properties
+                    WHERE
+                        client_id NOT IN (999)
+                        AND policy_status = 'active'
+                        AND wds_lat >= @boundingboxgeom.STPointN(1).STY
+                        AND wds_lat <= @boundingboxgeom.STPointN(3).STY
+                        AND wds_long <= @boundingboxgeom.STPointN(2).STX
+                        AND wds_long >= @boundingboxgeom.STPointN(4).STX
+                    GROUP BY client_id, response_status
+                ) AS t
+                WHERE t.distance <= @meters.
+2019/02/11 13:11:27 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Error converting data type varchar to float. in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\models\ResMonitorLog.php(547): CDbCommand->queryAll()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\models\ResMonitorLog.php(395): ResMonitorLog->runAnalysis(NULL, '36554')
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\ar\CActiveRecord.php(1103): ResMonitorLog->afterSave()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\controllers\ResMonitorLogController.php(157): CActiveRecord->save()
+#6 [internal function]: ResMonitorLogController->actionCreate('66886', 'monitor')
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ResMonitorLogController), Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ResMonitorLogController), Object(ReflectionMethod), Array)
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\filters\WDSAPIFilter.php(105): CFilterChain->run()
+#12 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\filters\CFilter.php(38): WDSAPIFilter->preFilter(Object(CFilterChain))
+#13 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#14 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\CWebApplication.php(282): CController->run('create')
+#21 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\CWebApplication.php(141): CWebApplication->runController('resMonitorLog/c...')
+#22 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\inetpub\wwwroot\pro.wildfire-defense.com\index.php(15): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?r=resMonitorLog/create&obs_id=66886&page=monitor
+HTTP_REFERER=https://pro.wildfire-defense.com/index.php?r=resMonitorLog/create&obs_id=66886&page=monitor
+---
+2019/02/11 13:18:03 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Error converting data type varchar to float.. The SQL statement executed was: 
+            DECLARE @perimeter geography = (SELECT l.geog FROM res_perimeters p INNER JOIN location l ON p.perimeter_location_id = l.id WHERE p.id = :perimeterID);
+            IF @perimeter.STNumPoints() > 1000
+            BEGIN
+                SET @perimeter = @perimeter.Reduce(10);
+            END
+            DECLARE @bufferMeters float(24) = :buffer;
+            DECLARE @buffer geography = @perimeter.STBuffer(@bufferMeters)
+            DECLARE @boundingboxgeom geometry = geometry::STGeomFromWKB(@buffer.STAsBinary(), @buffer.STSrid).STEnvelope();
+
+            SELECT * FROM (
+                SELECT
+                    p.pid,
+                    p.response_status,
+                    p.coverage_a_amt,
+                    p.wds_lat lat,
+                    p.wds_long long,
+                    p.wds_geocode_level,
+                    p.wds_geocoder,
+                    p.wds_match_score,
+                    p.geog.STDistance(@perimeter) [distance],
+                    p.address_line_1,
+                    p.city,
+                    p.state,
+                    m.last_name,
+                    m.client_id,
+                    c.name as client,
+                    c.map_enrolled_color,
+                    c.map_not_enrolled_color
+                FROM properties p
+                    INNER JOIN members m ON m.mid = p.member_mid
+                    INNER JOIN client c ON c.id = m.client_id
+                WHERE p.policy_status = 'active'
+                    AND p.type_id = 1
+                    AND p.wds_geocode_level != 'unmatched'
+					AND p.wds_lat IS NOT NULL
+					AND p.wds_long IS NOT NULL
+                    AND p.wds_lat >= @boundingboxgeom.STPointN(1).STY
+                    AND p.wds_lat <= @boundingboxgeom.STPointN(3).STY
+                    AND p.wds_long <= @boundingboxgeom.STPointN(2).STX
+                    AND p.wds_long >= @boundingboxgeom.STPointN(4).STX
+            ) s
+            WHERE s.distance <= @bufferMeters --now filter down by distance from perimeter
+            .
+2019/02/11 13:18:03 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Error converting data type varchar to float. in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\GIS.php(385): CDbCommand->queryAll()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\models\Property.php(1017): GIS::getPolicyAlert('36549', '5', NULL)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\controllers\PropertyController.php(571): Property::getGeoJson('36549', '5', NULL)
+#4 [internal function]: PropertyController->actionGetGeoJson('36549', '5', NULL)
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(PropertyController), Array)
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PropertyController), Object(ReflectionMethod), Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\filters\WDSAPIFilter.php(105): CFilterChain->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\filters\CFilter.php(38): WDSAPIFilter->preFilter(Object(CFilterChain))
+#11 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#12 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#14 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\CWebApplication.php(282): CController->run('getGeoJson')
+#19 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\web\CWebApplication.php(141): CWebApplication->runController('property/getGeo...')
+#20 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\inetpub\wwwroot\pro.wildfire-defense.com\index.php(15): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php?r=property/getGeoJson&perimeterID=36549&bufferDistance=5
+HTTP_REFERER=https://pro.wildfire-defense.com/index.php?r=resMonitorLog/viewMonitoredFire&id=72329&page=monitor
+---

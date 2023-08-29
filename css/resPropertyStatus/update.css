@@ -1,0 +1,56 @@
+﻿#responsePropertyStatusContainer {
+    padding: 3px 20px 20px 20px;
+    margin-top: 5px;
+    /*border-top: 1px solid #e6e6e6;*/
+}
+#closeButton {
+    padding-top: 6px;
+}
+#closeButtonImage {
+    background-image: url('/images/CloseButton.png');
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+#closeButtonImage:hover {
+    background-image: url('/images/CloseButtonHighlighted.png');
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+#memberContainer {
+    background-color: #D8D8D8;
+    border-bottom: 1px solid #ddd;
+    margin: -10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+#memberContainer .cellFirst {
+    width: 40%;
+    float: left;
+    padding-right: 10px;
+    display: block;
+}
+#memberContainer .cellMiddle {
+    width: 30%;
+    float: left;
+    padding-right: 10px;
+    display: block;    
+}
+#memberContainer .cellLast {
+    width: 20%;
+    float: left;
+    display: block;    
+}
+.infoTable tr td:first-child {
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+}
+.propertyStatusForm {
+    border-top: none !important;
+}
+.halfWidthField {
+    float: left;
+    width: 50%;
+}

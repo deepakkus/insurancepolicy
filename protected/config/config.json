@@ -1,0 +1,47 @@
+{
+    "params": {
+        "env": "pro",
+        "wdsfireBaseUrl": "https://dashboard.wildfire-defense.com",
+        "wdsenginesBaseUrl": "https://engines.wildfire-defense.com",
+        "apiBaseUrlG1G2": "https://g2bridge.wildfire-defense.com",
+		"defaultClient": "1015",
+        "emailHost": "tls://smtp.office365.com:587",
+		"emailSMTPOptions": {
+		  "ssl": {
+			"verify_peer": false,
+			"verify_peer_name": false,
+			"allow_self_signed": true
+		  }
+		},
+        "emailUser": "no-reply@wildfire-defense.com",
+        "emailPass": "MyTreesDance99!",
+        "dataStorePath": "\\\\10.1.110.20\\WDSadmin\\pro",
+        "dataStoreUser": "NFS_Synology\\IISuser",
+        "dataStorePW": "MyTreesDance99!",
+        "dataStoreMapDriveLetter": "W",
+        "vsClientID": "DCC958DB-0BB3-4961-A6D6-821FFAF5D714",
+        "vsSecret": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im9PdmN6NU1fN3AtSGpJS2xGWHo5M3VfVjBabyJ9.eyJjaWQiOiJkY2M5NThkYi0wYmIzLTQ5NjEtYTZkNi04MjFmZmFmNWQ3MTQiLCJjc2kiOiIxZWUwYTJhMS1lMmExLTQyMWUtOTBhNS01ZWZmYjZlZWViZTMiLCJuYW1laWQiOiI0M2YxNjUyMS1mMTkyLTQ2MjgtOGVlMi0wMGI2MGUxNzI4ODkiLCJpc3MiOiJhcHAudnNzcHMudmlzdWFsc3R1ZGlvLmNvbSIsImF1ZCI6ImFwcC52c3Nwcy52aXN1YWxzdHVkaW8uY29tIiwibmJmIjoxNDc1MDc2NjgxLCJleHAiOjE2MzI4NDMwODF9.FVBRD8791bHLxXLdCCQoDFQrtM_8BA4lzEVaQXDimZvuufTeoRAmmScuR-vkeP7tubEFyRkYrziyCfzPaOlrav7dQq5Ytx7T4HGLxUq9ddAe0S3dR81r1ezs2g1htabffZQysuPtg0cShmaEr_Jp9ksKsQPhep_hueTSaMJDUkUGJc7b-gFvR99agHC8LfxKgMRKBe2RFN46Rysx140W3JKAEXI3AjYhiSDBA2nwPcI_WnyFqdvrNiniL9APsCeApp0D3js5-SyKoe2HddhlmaFAVXXTAqzDDcewEBqwfon2CXV19x1UpN5jq_HJrgc4gLsT9rmzalg6ngRmLRTlOg",
+        "usaaB2BUsername": "wildfiredef",
+        "usaaB2BPassword": "f3eCHVEi"
+    },
+    "database": {        
+        "db": {
+            "class": "CDbConnection",
+            "connectionString": "sqlsrv:Server=localhost;Database=WDSG1",
+            "username": "sa",
+            "password": "wdsg1passcode"
+        },
+        "riskdb": {
+            "class": "CDbConnection",
+            "connectionString": "sqlsrv:Server=prodsql;Database=wds_risk",
+            "username": "WDS_Risk",
+            "password": "wds_risk20122012^^"
+        },
+        "riskdbpostgres": {
+            "class": "CDbConnection",
+            "connectionString": "pgsql:host=prodpostgre;port=5432;dbname=wds_risk",
+            "username": "postgres",
+            "password": "sa20122012^^"
+        }
+    }
+}

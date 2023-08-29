@@ -1,0 +1,112 @@
+﻿img {
+    max-width: 100%; /* This rule is very important, please do not ignore this! */
+    max-height: 100%;
+}
+
+.figure-wrapper {
+    display: block;
+}
+.image-container.target {
+    margin-top: 40px;
+}
+.image-container {
+    display: inline-block;
+    max-width: 100%;
+    background: white;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #e2e2e2;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.image-container .image-meta {
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: left;
+}
+.image-edit-container {
+    position: relative;
+    border: 1px solid black;
+    /* Checkered background */
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAAA3NCSVQICAjb4U/gAAAABlBMVEXMzMz////TjRV2AAAACXBIWXMAAArrAAAK6wGCiw1aAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAABFJREFUCJlj+M/AgBVhF/0PAH6/D/HkDxOGAAAAAElFTkSuQmCC);
+}
+
+/* Image Editor Toolbar */
+
+.image-edit-toolbar {
+    display: block;
+    position: absolute;
+    top: -45px;
+    left: 0;
+    background: #444;
+    height: 40px;
+    min-width: 40px;
+    z-index: 99;
+    border-radius: 2px;
+    white-space: nowrap;
+    padding: 0 5px;
+}
+.image-edit-toolbar:before {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #444;
+}
+.image-edit-button-group {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.image-edit-button-group:last-child {
+    border-right: none;
+}
+.image-edit-button {
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 2px 0 0 0;
+    width: 40px;
+    height: 40px;
+}
+.image-edit-button:hover {
+    cursor: pointer;
+    background: #555;
+}
+.image-edit-button:active {
+    cursor: pointer;
+    background: #333;
+}
+.image-edit-button:disabled .image-edit-icon {
+    fill: #666;
+}
+.image-edit-button:disabled:hover {
+    cursor: default;
+    background: transparent;
+}
+.image-edit-button.image-edit-button-active .image-edit-icon {
+    fill: #33b5e5;
+}
+.image-edit-button.image-edit-button-hidden {
+    display: none;
+}
+.image-edit-button.image-edit-button-success .image-edit-icon {
+    fill: #99cc00;
+}
+.image-edit-button.image-edit-button-warning .image-edit-icon {
+    fill: #FFBB33;
+}
+.image-edit-button.image-edit-button-danger .image-edit-icon {
+    fill: #FF4444;
+}
+.image-edit-icon {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+}body {
+}

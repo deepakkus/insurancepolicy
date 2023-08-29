@@ -1,0 +1,1053 @@
+2019/01/18 09:14:47 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/18 09:14:47 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/18 09:14:47 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/18 09:14:47 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 989 BRIDGER LAKE DR, BOZEMAN, MT 59718
+2019/01/18 09:15:48 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/18 09:15:48 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/18 09:15:48 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/18 09:15:48 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 13 CR N 2168, Nutrioso, AZ 85932
+2019/01/21 13:17:40 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22001]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]String or binary data would be truncated.. The SQL statement executed was: UPDATE [import_files] SET [status]=:status, [details]=:details WHERE id = 2741.
+2019/01/21 13:17:40 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[22001]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]String or binary data would be truncated.. The SQL statement executed was: UPDATE [import_files] SET [status]=:status, [details]=:details WHERE id = 2741 in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbCommand.php(1313): CDbCommand->execute(Array)
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ImportCommand.php(4081): CDbCommand->update('import_files', Array, 'id = 2741')
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ImportCommand.php(436): ImportCommand->printUpdateStatus(Array, 'Error', 'Error Details: ...')
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ImportCommand.php(68): ImportCommand->importPemcoPIF(Array)
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ImportCommand->run(Array)
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#9 {main}
+---
+2019/01/21 13:29:50 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/21 13:29:50 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/21 13:29:50 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/21 13:29:50 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 11 OAK MANOR WAY, PLEASANTON, CA 94566
+2019/01/22 10:34:20 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/22 10:34:20 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/22 10:34:20 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/22 10:34:20 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 203 BEAR CUB RIDGE, BIG CANOE, GA 30143
+2019/01/22 10:42:47 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/22 10:42:47 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/22 10:42:47 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/22 10:42:47 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 56198 ISLAND LN, #54, MONKEY ISLAND, OK 74331
+2019/01/22 10:47:15 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/22 10:47:15 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/22 10:47:15 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/22 10:47:15 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 117 MARSHHEN DR., LITCHFIELD BEACH, SC 29585
+2019/01/22 11:05:27 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/22 11:05:27 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/22 11:05:27 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/22 11:05:27 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 240 SAINT ANDREWS DR E, MABANK, TX 75147
+2019/01/22 11:22:40 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/22 11:22:40 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/22 11:22:40 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/22 11:22:40 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 36 LAKE ROAD, WINTHROP, WA 98862
+2019/01/22 11:22:41 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/22 11:22:41 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/22 11:22:41 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/22 11:22:41 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 13 LAKE RD, WINTHROP, WA 98862
+2019/01/22 11:23:45 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/22 11:23:45 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/22 11:23:45 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/22 11:23:45 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 6705 COLD SPRINGS ROAD, WILSON, WY 83014
+2019/01/22 11:35:16 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/22 11:35:16 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/22 11:35:16 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/22 11:35:16 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 2412 W OAKCREST LANE, HOLLADAY, UT 84121
+2019/01/22 12:09:48 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/22 12:09:48 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/22 12:09:48 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/22 12:09:48 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 1505 SE OXFORD LN, MILWAUKIE, OR 972227414
+2019/01/22 12:15:05 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/22 12:15:05 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/22 12:15:05 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/22 12:15:05 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 21717 MAKAH RD, WOODWAY, WA 980207202
+2019/01/22 12:46:12 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/22 12:46:12 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/22 12:46:12 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/22 12:46:12 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: LOT 352 UNIT 2, PINETOP, AZ 85935
+2019/01/23 08:09:53 [error] [php] fopen(W:\import_files\WDS_NotEnrolled_20190122): failed to open stream: No such file or directory (C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ImportCommand.php:2052)
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ImportCommand->run()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CConsoleApplication->run()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once()
+
+2019/01/23 08:10:36 [error] [php] array_map(): Argument #2 should be an array (C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ImportCommand.php:2057)
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ImportCommand->run()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CConsoleApplication->run()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once()
+
+2019/01/23 08:12:16 [error] [php] array_map(): Argument #2 should be an array (C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ImportCommand.php:2057)
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ImportCommand->run()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CConsoleApplication->run()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once()
+
+2019/01/23 08:13:50 [error] [php] array_map(): Argument #2 should be an array (C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ImportCommand.php:2057)
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ImportCommand->run()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CConsoleApplication->run()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once()
+
+2019/01/24 13:24:10 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:24:10 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:24:10 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:24:10 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 3755 E BROADWAY RD APT 88, MESA, AZ 85206
+2019/01/24 13:29:06 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:29:06 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:29:06 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:29:06 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 12923 INGLEWOOD AVE STE 2, HAWTHORNE, CA 90250
+2019/01/24 13:29:24 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:29:24 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:29:24 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:29:24 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 16623A OLD JACKSONVILLE HWY, TYLER, TX 75703
+2019/01/24 13:29:43 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:29:43 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:29:43 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:29:43 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 10136 E SOUTHERN AVE UNIT 1056, MESA, AZ 85209
+2019/01/24 13:30:02 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:30:02 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:30:02 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:30:02 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 23206 LYONS AVE STE 112, NEWHALL, CA 91321
+2019/01/24 13:30:03 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:30:03 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:30:03 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:30:03 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 7320 WOODLAKE AVE STE 100, WEST HILLS, CA 91307
+2019/01/24 13:31:03 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:31:03 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:31:03 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:31:03 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 9033 WILSHIRE BLVD STE 102, BEVERLY HILLS, CA 90211
+2019/01/24 13:31:17 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:31:17 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:31:17 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:31:17 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 1415 E COLORADO ST STE M, GLENDALE, CA 91205
+2019/01/24 13:31:59 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:31:59 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:31:59 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:31:59 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 2800 RIVERSIDE AVE STE 102, PASO ROBLES, CA 93446
+2019/01/24 13:32:35 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:32:35 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:32:35 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:32:35 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 222 W EULALIA ST STE 212, GLENDALE, CA 91204
+2019/01/24 13:32:50 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:32:50 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:32:50 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:32:50 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 921 & 923 SUNSET AVE, DALLAS, TX 75208
+2019/01/24 13:43:16 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:43:16 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:43:16 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:43:16 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 1122 & 1142 Mitchell Ave A & B, Blaine, WA 98230
+2019/01/24 13:43:21 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:43:21 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:43:21 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:43:21 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 2420 S Union Ave Ste 100, Tacoma, WA 98405
+2019/01/24 13:43:35 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:43:35 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:43:35 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:43:35 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 5818 Road J 6 Ne, Moses Lake, WA 98837
+2019/01/24 13:43:45 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:43:45 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:43:45 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:43:45 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 3430 N 1st Ave Ste 2, Tucson, AZ 85719
+2019/01/24 13:43:46 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:43:46 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:43:46 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:43:46 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: PO Box 554, Rigby, ID 83442
+2019/01/24 13:43:50 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:43:50 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:43:50 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:43:50 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 1339 Commerce Ave Ste 116, Longview, WA 98623
+2019/01/24 13:44:27 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:44:27 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:44:27 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:44:27 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 309 S Cloverdale Ste B10,B11, Seattle, WA 98146
+2019/01/24 13:44:51 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:44:51 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:44:51 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:44:51 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 614 12th St E, Tacoma, WA 98445
+2019/01/24 13:44:55 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:44:55 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:44:55 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:44:55 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 7291 N Scottsdale Rd Unit, Scottsdale, AZ 85253
+2019/01/24 13:44:56 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:44:56 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:44:56 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:44:56 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 377 Secesh River Rd, Grangeville, ID 83530
+2019/01/24 13:45:23 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:45:23 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:45:23 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:45:23 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 747 N 200 E Apt 6, Provo, UT 84606
+2019/01/24 13:45:30 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:45:30 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:45:30 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:45:30 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 712 1/2 N 24th St, Billings, MT 59101
+2019/01/24 13:45:39 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:45:39 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:45:39 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:45:39 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: Sec 25,26,35 T15s R40e, Preston, ID 83263
+2019/01/24 13:45:44 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:45:44 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:45:44 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:45:44 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 650 N Hawes Ave #4417, Mesa, AZ 85207
+2019/01/24 13:46:07 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:46:07 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:46:07 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:46:07 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: Sec 6 Twp 5n Rge 4w, Parma, ID 83660
+2019/01/24 13:46:08 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:46:08 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:46:08 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:46:08 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: S 12,13,14 &15 T 14n R 4ebm, Cascade, ID 83645
+2019/01/24 13:46:08 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:46:08 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:46:08 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:46:08 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: W 1/2 Nw 1/4 S 15, T 7n, R 8e, Boise Co, ID 83702
+2019/01/24 13:46:20 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:46:20 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:46:20 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:46:20 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 1151 Thorn Creek Rd, St John, WA 991719644
+2019/01/24 13:46:21 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:46:21 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:46:21 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:46:21 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 11322 S Ave 12e, Yuma, AZ 85367
+2019/01/24 13:46:26 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:46:26 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:46:26 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:46:26 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: Sand Creek Land, Boise, ID 83701
+2019/01/24 13:46:26 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:46:26 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:46:26 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:46:26 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: Dunigan Creek Ranch, Oreana, ID 83650
+2019/01/24 13:46:27 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:46:27 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:46:27 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:46:27 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: Hot Springs Ranch, Donnelly, ID 83615
+2019/01/24 13:46:28 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:46:28 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:46:28 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:46:28 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: Little Valley Ranch, Cascade, ID 83611
+2019/01/24 13:46:30 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:46:30 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:46:30 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:46:30 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 203 N Mill Unit 202, Colfax, WA 99111
+2019/01/24 13:46:33 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:46:33 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:46:33 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:46:33 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 1124 Az-82, Patagonia, AZ 85621
+2019/01/24 13:46:36 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:46:36 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:46:36 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:46:36 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 39109 Rhody Rd, Sumpter, OR 97877
+2019/01/24 13:46:36 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:46:36 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:46:36 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:46:36 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 1125 Foothill Dr, Vale, OR 97918
+2019/01/24 13:46:53 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:46:53 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:46:53 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:46:53 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: Sec 2,36 Twp 24n Rge 2e, Power, MT 59468
+2019/01/24 13:46:54 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:46:54 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:46:54 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:46:54 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: Sec 15,22 Twp 24n Rge 2e, Power, MT 59468
+2019/01/24 13:46:54 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:46:54 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:46:54 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:46:54 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: Sec 27,28 Twp 24n Rge 2e, Power, MT 59468
+2019/01/24 13:46:55 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:46:55 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:46:55 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:46:55 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: Sec 25 Twp 23n Rge 2e, Power, MT 59468
+2019/01/24 13:46:56 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:46:56 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:46:56 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:46:56 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: Sec 24 Twp 22n 2e, Power, MT 59468
+2019/01/24 13:47:29 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:47:29 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:47:29 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:47:29 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 19050 Highway 62, Eagle Point, OR 97524
+2019/01/24 13:49:22 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:49:22 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:49:22 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:49:22 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 102 E Grover St Apt A, Lynden, WA 98264
+2019/01/24 13:49:45 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:49:45 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:49:45 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:49:45 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 647 S 2310 W, Pleasant Grant, UT 84062
+2019/01/24 13:50:06 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]The INSERT statement conflicted with the FOREIGN KEY constraint "FK_properties_geocode_history_properties". The conflict occurred in database "wds_pro", table "dbo.properties", column 'pid'.. The SQL statement executed was: INSERT INTO [properties_location_history] ([property_pid], [wds_geocode_level], [wds_lat], [wds_long], [wds_geocoder], [wds_match_address], [wds_match_score], [wds_geocode_date]) VALUES (:property_pid, :wds_geocode_level, :wds_lat, :wds_long, :wds_geocoder, :wds_match_address, :wds_match_score, :wds_geocode_date).
+2019/01/24 13:50:06 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]The INSERT statement conflicted with the FOREIGN KEY constraint "FK_properties_geocode_history_properties". The conflict occurred in database "wds_pro", table "dbo.properties", column 'pid'.. The SQL statement executed was: INSERT INTO [properties_location_history] ([property_pid], [wds_geocode_level], [wds_lat], [wds_long], [wds_geocoder], [wds_match_address], [wds_match_score], [wds_geocode_date]) VALUES (:property_pid, :wds_geocode_level, :wds_lat, :wds_long, :wds_geocoder, :wds_match_address, :wds_match_score, :wds_geocode_date) in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbCommand.php(1278): CDbCommand->execute(Array)
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\models\Property.php(767): CDbCommand->insert('properties_loca...', Array)
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\ar\CActiveRecord.php(1103): Property->afterSave()
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ImportCommand.php(1566): CActiveRecord->save()
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ImportCommand.php(62): ImportCommand->importMoEPIF(Array)
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ImportCommand->run(Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#11 {main}
+---
+2019/01/24 13:56:32 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:56:32 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:56:32 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:56:32 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 620 N 34th Ave Apt 101, Yakima, WA 98902
+2019/01/24 13:56:34 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:56:34 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:56:34 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:56:34 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 5910 W Lincoln Ave Apt 45, Yakima, WA 98908
+2019/01/24 13:56:50 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:56:50 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:56:50 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:56:50 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 1412 S Rim View St, Spokane, WA 99224
+2019/01/24 13:56:52 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:56:52 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:56:52 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:56:52 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 3015 272nd St, Nahcotta, WA 98637
+2019/01/24 13:56:53 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:56:53 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:56:53 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:56:53 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 510 Forsyth Ln Unit 308, Edmonds, WA 98020
+2019/01/24 13:57:05 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/24 13:57:05 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/24 13:57:05 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/24 13:57:05 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 292 E Brigham Ln #223, North Salt Lake, UT 84054
+2019/01/25 16:33:02 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/25 16:33:02 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/25 16:33:02 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/25 16:33:02 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 179 S Tawny Drive, Grantsville, UT 84029
+2019/01/25 16:45:08 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/25 16:45:08 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/25 16:45:08 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/25 16:45:08 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 1000 W HANSEN LANE, CENTERFIELD, UT 84622
+2019/01/25 16:48:15 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/25 16:48:15 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/25 16:48:15 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/25 16:48:15 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 5980 TEXAS HILL COUNTRY TRAIL, LEAKEY, TX 78873
+2019/01/25 16:48:48 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error code: 403
+2019/01/25 16:48:48 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error message: Token is valid but access is denied.
+2019/01/25 16:48:48 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, error details: array (
+  0 => 'User does not have permissions to store geocoding results.',
+)
+2019/01/25 16:48:48 [error] [GeocodeESRI::getLocationPro] ERROR GEOCODING WITH PRODUCTION ESRI, address used: 15 - 16 FM 49, hawkins, TX 75765
+2019/01/28 16:30:00 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[28000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Login failed for user 'wds_backend'. in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\EDbConnection.php(29): CDbConnection->open()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(347): EDbConnection->open()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(394): CDbConnection->init()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(103): CModule->getComponent('db')
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(29): CModule->__get('db')
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#11 {main}
+---
+2019/01/28 16:45:00 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[28000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Login failed for user 'wds_backend'. in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\EDbConnection.php(29): CDbConnection->open()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(347): EDbConnection->open()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(394): CDbConnection->init()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(103): CModule->getComponent('db')
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(29): CModule->__get('db')
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#11 {main}
+---
+2019/01/28 21:15:00 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[28000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Login failed for user 'wds_backend'. in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\EDbConnection.php(29): CDbConnection->open()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(347): EDbConnection->open()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(394): CDbConnection->init()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(103): CModule->getComponent('db')
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(29): CModule->__get('db')
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#11 {main}
+---
+2019/01/28 21:30:00 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[28000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Login failed for user 'wds_backend'. in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\EDbConnection.php(29): CDbConnection->open()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(347): EDbConnection->open()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(394): CDbConnection->init()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(103): CModule->getComponent('db')
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(29): CModule->__get('db')
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#11 {main}
+---
+2019/01/28 21:45:00 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[28000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Login failed for user 'wds_backend'. in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\EDbConnection.php(29): CDbConnection->open()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(347): EDbConnection->open()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(394): CDbConnection->init()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(103): CModule->getComponent('db')
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(29): CModule->__get('db')
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#11 {main}
+---
+2019/02/01 10:25:24 [error] [php] Trying to get property of non-object (C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ImportCommand.php:4181)
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CConsoleApplication->run()
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once()
+
+2019/02/01 10:27:07 [error] [php] Trying to get property of non-object (C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ImportCommand.php:4181)
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CConsoleApplication->run()
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once()
+
+2019/02/01 10:28:30 [error] [php] Trying to get property of non-object (C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ImportCommand.php:4181)
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CConsoleApplication->run()
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once()
+
+2019/02/01 10:30:14 [error] [php] fopen(W:\import_files\SQL_Import_02052019.csv): failed to open stream: No such file or directory (C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ImportCommand.php:4149)
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ImportCommand->run()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CConsoleApplication->run()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once()
+
+2019/02/01 10:30:18 [error] [php] fopen(W:\import_files\SQL_Import_02052019.csv): failed to open stream: No such file or directory (C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ImportCommand.php:4149)
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ImportCommand->run()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CConsoleApplication->run()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once()
+
+2019/02/01 10:30:29 [error] [php] fopen(W:\import_files\SQL_Import_02052019.csv): failed to open stream: No such file or directory (C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ImportCommand.php:4149)
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ImportCommand->run()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CConsoleApplication->run()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once()
+
+2019/02/01 10:30:55 [error] [php] fopen(W:\import_files\SQL_Import_02052019.csv): failed to open stream: No such file or directory (C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ImportCommand.php:4149)
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ImportCommand->run()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CConsoleApplication->run()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once()
+
+2019/02/01 10:32:29 [error] [php] Trying to get property of non-object (C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ImportCommand.php:4181)
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CConsoleApplication->run()
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once()
+
+2019/02/01 18:15:00 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]The transaction log for database 'wds_pro' is full due to 'LOG_BACKUP'.. The SQL statement executed was: DELETE FROM res_fire_scrape WHERE id IS NOT NULL.
+2019/02/01 18:15:00 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]The transaction log for database 'wds_pro' is full due to 'LOG_BACKUP'.. The SQL statement executed was: DELETE FROM res_fire_scrape WHERE id IS NOT NULL in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(31): CDbCommand->execute()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#6 {main}
+---
+2019/02/02 05:00:17 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]The transaction log for database 'wds_pro' is full due to 'LOG_BACKUP'.. The SQL statement executed was: INSERT INTO [dbo].[status_history] ([table_name], [table_field], [table_id], [status], [date_changed], [user_id]) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+2019/02/02 05:00:17 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]The transaction log for database 'wds_pro' is full due to 'LOG_BACKUP'.. The SQL statement executed was: INSERT INTO [dbo].[status_history] ([table_name], [table_field], [table_id], [status], [date_changed], [user_id]) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5) in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\models\StatusHistory.php(130): CActiveRecord->insert()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\models\Property.php(708): StatusHistory->insertStatus(Object(Property), 'policy_status', '01/30/2019 12:0...')
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\ar\CActiveRecord.php(1125): Property->beforeSave()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\ar\CActiveRecord.php(811): CActiveRecord->update(NULL)
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\USAAPolicyStatusUpdateCommand.php(19): CActiveRecord->save()
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): USAAPolicyStatusUpdateCommand->run(Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#11 {main}
+---
+2019/02/10 16:00:25 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\EDbConnection.php(29): CDbConnection->open()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(347): EDbConnection->open()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(394): CDbConnection->init()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(103): CModule->getComponent('db')
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(29): CModule->__get('db')
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#11 {main}
+---
+2019/02/11 08:45:00 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[28000]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Login failed for user 'wds_backend'. in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\EDbConnection.php(29): CDbConnection->open()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(347): EDbConnection->open()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(394): CDbConnection->init()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(103): CModule->getComponent('db')
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(29): CModule->__get('db')
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#11 {main}
+---
+2019/02/19 16:22:05 [error] [php] fopen(W:\import_files\Eligible 021719.csv): failed to open stream: No such file or directory (C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ImportCommand.php:2791)
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ImportCommand->run()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CConsoleApplication->run()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once()
+
+2019/02/27 07:59:57 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[08S01]: [Microsoft][ODBC Driver 13 for SQL Server]TCP Provider: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+. The SQL statement executed was: SELECT COUNT(pid)
+        FROM properties
+            INNER JOIN members on members.mid = properties.member_mid
+        WHERE members.client = :clientName
+	        AND response_status = 'enrolled'
+	        AND response_enrolled_date < :today
+	        AND policy_status = 'active'.
+2019/02/27 07:59:57 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[08S01]: [Microsoft][ODBC Driver 13 for SQL Server]TCP Provider: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+. The SQL statement executed was: SELECT COUNT(pid)
+        FROM properties
+            INNER JOIN members on members.mid = properties.member_mid
+        WHERE members.client = :clientName
+	        AND response_status = 'enrolled'
+	        AND response_enrolled_date < :today
+	        AND policy_status = 'active' in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbCommand.php(433): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResDailiesCommand.php(66): CDbCommand->queryScalar()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResDailiesCommand.php(22): ResDailiesCommand->getDailiesData(Object(Client))
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResDailiesCommand->run(Array)
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic(4): require_once('C:\\inetpub\\wwwr...')
+#9 {main}
+---
+2019/02/27 08:00:26 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\EDbConnection.php(29): CDbConnection->open()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(347): EDbConnection->open()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(394): CDbConnection->init()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(103): CModule->getComponent('db')
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(29): CModule->__get('db')
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#11 {main}
+---
+2019/02/27 08:15:15 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\EDbConnection.php(29): CDbConnection->open()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(347): EDbConnection->open()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(394): CDbConnection->init()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(103): CModule->getComponent('db')
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(29): CModule->__get('db')
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#11 {main}
+---
+2019/02/27 08:45:33 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\EDbConnection.php(29): CDbConnection->open()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(347): EDbConnection->open()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(394): CDbConnection->init()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(103): CModule->getComponent('db')
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(29): CModule->__get('db')
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#11 {main}
+---
+2019/02/27 09:00:15 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\EDbConnection.php(29): CDbConnection->open()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(347): EDbConnection->open()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(394): CDbConnection->init()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(103): CModule->getComponent('db')
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(29): CModule->__get('db')
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#11 {main}
+---
+2019/02/27 09:15:15 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\EDbConnection.php(29): CDbConnection->open()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(347): EDbConnection->open()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(394): CDbConnection->init()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(103): CModule->getComponent('db')
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(29): CModule->__get('db')
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#11 {main}
+---
+2019/02/27 09:30:15 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\EDbConnection.php(29): CDbConnection->open()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(347): EDbConnection->open()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(394): CDbConnection->init()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(103): CModule->getComponent('db')
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(29): CModule->__get('db')
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#11 {main}
+---
+2019/02/27 09:45:35 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\EDbConnection.php(29): CDbConnection->open()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(347): EDbConnection->open()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(394): CDbConnection->init()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(103): CModule->getComponent('db')
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(29): CModule->__get('db')
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#11 {main}
+---
+2019/02/27 10:00:26 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\EDbConnection.php(29): CDbConnection->open()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(347): EDbConnection->open()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(394): CDbConnection->init()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(103): CModule->getComponent('db')
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(29): CModule->__get('db')
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#11 {main}
+---
+2019/02/27 10:15:15 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\EDbConnection.php(29): CDbConnection->open()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(347): EDbConnection->open()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(394): CDbConnection->init()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(103): CModule->getComponent('db')
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(29): CModule->__get('db')
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#11 {main}
+---
+2019/02/27 10:30:15 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\EDbConnection.php(29): CDbConnection->open()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(347): EDbConnection->open()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(394): CDbConnection->init()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(103): CModule->getComponent('db')
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(29): CModule->__get('db')
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#11 {main}
+---
+2019/02/27 10:45:15 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\EDbConnection.php(29): CDbConnection->open()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(347): EDbConnection->open()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(394): CDbConnection->init()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(103): CModule->getComponent('db')
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(29): CModule->__get('db')
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#11 {main}
+---
+2019/02/27 11:00:29 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\EDbConnection.php(29): CDbConnection->open()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(347): EDbConnection->open()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(394): CDbConnection->init()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(103): CModule->getComponent('db')
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(29): CModule->__get('db')
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#11 {main}
+---
+2019/02/27 11:15:15 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\EDbConnection.php(29): CDbConnection->open()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(347): EDbConnection->open()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(394): CDbConnection->init()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(103): CModule->getComponent('db')
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(29): CModule->__get('db')
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#11 {main}
+---
+2019/02/27 11:30:15 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\EDbConnection.php(29): CDbConnection->open()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(347): EDbConnection->open()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(394): CDbConnection->init()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(103): CModule->getComponent('db')
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(29): CModule->__get('db')
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#11 {main}
+---
+2019/02/27 11:45:15 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [53].  in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\EDbConnection.php(29): CDbConnection->open()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(347): EDbConnection->open()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(394): CDbConnection->init()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(103): CModule->getComponent('db')
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(29): CModule->__get('db')
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#11 {main}
+---
+2019/03/05 13:23:51 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[40001]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Transaction (Process ID 69) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.. The SQL statement executed was: UPDATE [dbo].[properties] SET [member_mid]=:yp0, [address_line_1]=:yp1, [address_line_2]=:yp2, [city]=:yp3, [county]=:yp4, [state]=:yp5, [zip]=:yp6, [zip_supp]=:yp7, [long]=:yp8, [lat]=:yp9, [dwelling_type]=:yp10, [roof_type]=:yp11, [geo_risk]=:yp12, [response_status]=:yp13, [fireshield_status]=:yp14, [pre_risk_status]=:yp15, [policy]=:yp16, [coverage_a_amt]=:yp17, [policy_effective]=:yp18, [policy_expiration]=:yp19, [lob]=:yp20, [response_enrolled_date]=:yp21, [fs_assessments_allowed]=:yp22, [rated_company]=:yp23, [p_id]=:yp24, [fs_status_date]=:yp25, [pr_status_date]=:yp26, [res_status_date]=:yp27, [policy_status]=:yp28, [geocode_level]=:yp29, [brushfire_inspect]=:yp30, [brushfire_inspect_date]=:yp31, [policy_status_date]=:yp32, [last_update]=:yp33, [comments]=:yp34, [flag]=:yp35, [agent_id]=:yp36, [transaction_effective]=:yp37, [transaction_type]=:yp38, [additional_contacts]=:yp39, [producer]=:yp40, [response_auto_enrolled]=:yp41, [type_id]=:yp42, [wds_geocode_level]=:yp43, [geog]=:yp44, [client_id]=:yp45, [client_policy_id]=:yp46, [wds_lat]=:yp47, [wds_long]=:yp48, [question_set_id]=:yp49, [multi_family]=:yp50, [wds_geocoder]=:yp51, [wds_match_address]=:yp52, [wds_match_score]=:yp53, [wds_geocode_date]=:yp54, [app_status]=:yp55, [agency_code]=:yp56, [agency_name]=:yp57, [wds_lob]=:yp58, [location]=:yp59, [seq_num]=:yp60, [risk_score]=:yp61, [risk_score_whp]=:yp62, [risk_score_v]=:yp63, [risk_date_created]=:yp64, [policyholder_name]=:yp65, [member_num_tmp]=:yp66, [agency_phone]=:yp67 WHERE [dbo].[properties].[pid]=7927186.
+2019/03/05 13:23:51 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[40001]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Transaction (Process ID 69) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.. The SQL statement executed was: UPDATE [dbo].[properties] SET [member_mid]=:yp0, [address_line_1]=:yp1, [address_line_2]=:yp2, [city]=:yp3, [county]=:yp4, [state]=:yp5, [zip]=:yp6, [zip_supp]=:yp7, [long]=:yp8, [lat]=:yp9, [dwelling_type]=:yp10, [roof_type]=:yp11, [geo_risk]=:yp12, [response_status]=:yp13, [fireshield_status]=:yp14, [pre_risk_status]=:yp15, [policy]=:yp16, [coverage_a_amt]=:yp17, [policy_effective]=:yp18, [policy_expiration]=:yp19, [lob]=:yp20, [response_enrolled_date]=:yp21, [fs_assessments_allowed]=:yp22, [rated_company]=:yp23, [p_id]=:yp24, [fs_status_date]=:yp25, [pr_status_date]=:yp26, [res_status_date]=:yp27, [policy_status]=:yp28, [geocode_level]=:yp29, [brushfire_inspect]=:yp30, [brushfire_inspect_date]=:yp31, [policy_status_date]=:yp32, [last_update]=:yp33, [comments]=:yp34, [flag]=:yp35, [agent_id]=:yp36, [transaction_effective]=:yp37, [transaction_type]=:yp38, [additional_contacts]=:yp39, [producer]=:yp40, [response_auto_enrolled]=:yp41, [type_id]=:yp42, [wds_geocode_level]=:yp43, [geog]=:yp44, [client_id]=:yp45, [client_policy_id]=:yp46, [wds_lat]=:yp47, [wds_long]=:yp48, [question_set_id]=:yp49, [multi_family]=:yp50, [wds_geocoder]=:yp51, [wds_match_address]=:yp52, [wds_match_score]=:yp53, [wds_geocode_date]=:yp54, [app_status]=:yp55, [agency_code]=:yp56, [agency_name]=:yp57, [wds_lob]=:yp58, [location]=:yp59, [seq_num]=:yp60, [risk_score]=:yp61, [risk_score_whp]=:yp62, [risk_score_v]=:yp63, [risk_date_created]=:yp64, [policyholder_name]=:yp65, [member_num_tmp]=:yp66, [agency_phone]=:yp67 WHERE [dbo].[properties].[pid]=7927186 in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\ar\CActiveRecord.php(1756): CDbCommand->execute()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\ar\CActiveRecord.php(1130): CActiveRecord->updateByPk('7927186', Array)
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\ar\CActiveRecord.php(811): CActiveRecord->update(NULL)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ImportCommand.php(3091): CActiveRecord->save()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ImportCommand.php(46): ImportCommand->importChubbPIF(Array)
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ImportCommand->run(Array)
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#10 {main}
+---
+2019/03/12 04:45:11 [error] [CurlRequest::getRequest] ERRORS WITH CURL RESPONSE: Error - Could not resolve host: www.wildcad.net
+2019/03/12 04:45:11 [error] [CurlRequest::getRequest] ERRORS WITH CURL RESPONSE: Error Number - 6
+2019/03/12 04:45:11 [error] [exception.CException] CException: CURL request received an error.  See error log for details. in C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\CurlRequest.php:40
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(51): CurlRequest::getRequest('http://www.wild...')
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(33): ResFireScrapeCommand->getUrls()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#7 {main}
+---
+2019/03/21 05:00:05 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[40001]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Transaction (Process ID 60) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.. The SQL statement executed was: SELECT pid,member_mid,address_line_1,address_line_2,city,county,state,zip,zip_supp,long,lat,dwelling_type,roof_type,geo_risk,response_status,fireshield_status,pre_risk_status,policy,coverage_a_amt,policy_effective,policy_expiration,lob,response_enrolled_date,fs_assessments_allowed,rated_company,p_id,fs_status_date,pr_status_date,res_status_date,policy_status,geocode_level,brushfire_inspect,brushfire_inspect_date,policy_status_date,last_update,comments,flag,agent_id,transaction_effective,transaction_type,additional_contacts,producer,response_auto_enrolled,type_id,wds_geocode_level,t.geog.ToString() as geog,client_id,client_policy_id,wds_lat,wds_long,question_set_id,multi_family,wds_geocoder,wds_match_address,wds_match_score,wds_geocode_date,app_status,agency_code,agency_name,wds_lob,location,seq_num,risk_score,risk_score_whp,risk_score_v,risk_date_created,policyholder_name,member_num_tmp,agency_phone FROM [dbo].[properties] [t] WHERE '2019-03-21' > policy_expiration AND policy_status = 'active' AND transaction_type = 'non-renew'.
+2019/03/21 05:00:05 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[40001]: [Microsoft][ODBC Driver 13 for SQL Server][SQL Server]Transaction (Process ID 60) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.. The SQL statement executed was: SELECT pid,member_mid,address_line_1,address_line_2,city,county,state,zip,zip_supp,long,lat,dwelling_type,roof_type,geo_risk,response_status,fireshield_status,pre_risk_status,policy,coverage_a_amt,policy_effective,policy_expiration,lob,response_enrolled_date,fs_assessments_allowed,rated_company,p_id,fs_status_date,pr_status_date,res_status_date,policy_status,geocode_level,brushfire_inspect,brushfire_inspect_date,policy_status_date,last_update,comments,flag,agent_id,transaction_effective,transaction_type,additional_contacts,producer,response_auto_enrolled,type_id,wds_geocode_level,t.geog.ToString() as geog,client_id,client_policy_id,wds_lat,wds_long,question_set_id,multi_family,wds_geocoder,wds_match_address,wds_match_score,wds_geocode_date,app_status,agency_code,agency_name,wds_lob,location,seq_num,risk_score,risk_score_whp,risk_score_v,risk_date_created,policyholder_name,member_num_tmp,agency_phone FROM [dbo].[properties] [t] WHERE '2019-03-21' > policy_expiration AND policy_status = 'active' AND transaction_type = 'non-renew' in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryAll()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\USAAPolicyStatusUpdateCommand.php(14): CActiveRecord->findAll(''2019-03-21' > ...')
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): USAAPolicyStatusUpdateCommand->run(Array)
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#9 {main}
+---
+2019/03/27 06:45:13 [error] [CurlRequest::getRequest] ERRORS WITH CURL RESPONSE: Error - Could not resolve host: www.wildcad.net
+2019/03/27 06:45:13 [error] [CurlRequest::getRequest] ERRORS WITH CURL RESPONSE: Error Number - 6
+2019/03/27 06:45:13 [error] [exception.CException] CException: CURL request received an error.  See error log for details. in C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\CurlRequest.php:40
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(51): CurlRequest::getRequest('http://www.wild...')
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(33): ResFireScrapeCommand->getUrls()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#7 {main}
+---
+2019/03/29 16:30:12 [error] [CurlRequest::getRequest] ERRORS WITH CURL RESPONSE: Error - Could not resolve host: www.wildcad.net
+2019/03/29 16:30:12 [error] [CurlRequest::getRequest] ERRORS WITH CURL RESPONSE: Error Number - 6
+2019/03/29 16:30:12 [error] [exception.CException] CException: CURL request received an error.  See error log for details. in C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\CurlRequest.php:40
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(51): CurlRequest::getRequest('http://www.wild...')
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(33): ResFireScrapeCommand->getUrls()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#7 {main}
+---
+2019/04/01 12:57:04 [error] [php] Undefined offset: 51 (C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ImportCommand.php:3014)
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CConsoleApplication->run()
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once()
+
+2019/04/02 12:15:27 [error] [CurlRequest::getRequest] ERRORS WITH CURL RESPONSE: Error - Failed to connect to www.wildcad.net port 80: Timed out
+2019/04/02 12:15:27 [error] [CurlRequest::getRequest] ERRORS WITH CURL RESPONSE: Error Number - 7
+2019/04/02 12:15:27 [error] [exception.CException] CException: CURL request received an error.  See error log for details. in C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\CurlRequest.php:40
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(71): CurlRequest::getRequest('http://www.wild...')
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(37): ResFireScrapeCommand->scrapeUrl('http://www.wild...')
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#7 {main}
+---
+2019/04/05 11:03:05 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]Unable to complete login process due to delay in opening server connection in C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\components\EDbConnection.php(29): CDbConnection->open()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(347): EDbConnection->open()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(394): CDbConnection->init()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CModule.php(103): CModule->getComponent('db')
+#5 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ResFireScrapeCommand.php(29): CModule->__get('db')
+#6 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ResFireScrapeCommand->run(Array)
+#7 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#8 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#9 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CApplication->run()
+#10 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once('C:\\inetpub\\wwwr...')
+#11 {main}
+---
+2019/04/12 14:43:39 [error] [php] fopen(W:\import_files\wds.csv_20190412.csv): failed to open stream: No such file or directory (C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ImportCommand.php:97)
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleCommandRunner.php(71): ImportCommand->run()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CConsoleApplication->run()
+#4 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once()
+
+2019/04/22 11:39:10 [error] [php] Undefined offset: 6 (C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\commands\ImportCommand.php:2968)
+Stack trace:
+#0 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#1 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\base\CApplication.php(185): CConsoleApplication->processRequest()
+#2 C:\inetpub\wwwroot\pro.wildfire-defense.com\framework\yiic.php(33): CConsoleApplication->run()
+#3 C:\inetpub\wwwroot\pro.wildfire-defense.com\protected\yiic.php(7): require_once()
+

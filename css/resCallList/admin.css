@@ -1,0 +1,14 @@
+﻿.smallHeading {
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+#ddlCaller {
+    margin: 7px auto; 
+    display: block;
+}
+
+.modalSmall {
+    width: 375px;
+    margin-left: -188px;
+}

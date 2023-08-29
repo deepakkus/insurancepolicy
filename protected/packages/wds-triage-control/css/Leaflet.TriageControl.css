@@ -1,0 +1,105 @@
+﻿/* ================================================================== */
+/* Toolbars
+/* ================================================================== */
+
+#map path {
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+            transition: all .3s ease;
+}
+
+.leaflet-triagetoolbar-section {
+    position: relative;
+}
+
+.leaflet-triagetoolbar-toolbar {
+	margin-top: 8px;
+    display: inline-block;
+}
+
+/* Triage Layers */
+
+.leaflet-wdstoolbar-triagelayers {
+    background: #ffffff;
+    border: 1px solid #999;
+    border-color: rgba(0,0,0,0.4);
+    border-radius: 0 3px 3px 0;
+    overflow-y: scroll;
+    height: 220px;
+    width: 250px;
+}
+
+.leaflet-wdstoolbar-triagelayers table {
+    width: 100%;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.leaflet-wdstoolbar-triagelayers table th {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #000000;
+}
+
+.leaflet-wdstoolbar-triagelayers table tr {
+    -webkit-transition: background-color .2s ease;
+       -moz-transition: background-color .2s ease;
+            transition: background-color .2s ease;
+}
+
+.leaflet-wdstoolbar-triagelayers table tr td {
+    cursor: pointer;
+    padding: 8px 10px 0 10px;
+}
+
+.leaflet-wdstoolbar-triagelayers table tr td input {
+    width: 150px;
+    height: auto;
+}
+
+.leaflet-wdstoolbar-triagelayers table .triage-results {
+    width: 1%;
+    white-space: nowrap;
+}
+
+/* KML Upload */
+
+.leaflet-wdstoolbar-uploadfile {
+    height: 100px;
+    width: 250px;
+    border: 1px solid #999;
+    border-radius: 0 3px 3px 0;
+}
+
+.leaflet-wdstoolbar-uploadfile form {
+    -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+            transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    outline: 2px dashed #000000;
+    outline-offset: -6px;
+    border-color: rgba(0,0,0,0.4);
+    background-color: #c8dadf;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.leaflet-wdstoolbar-uploadfile form .upload-labels {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.leaflet-wdstoolbar-uploadfile form.active {
+    background-color: #EBEBEB;
+    outline-offset: -10px;
+}
+
+/* Submit */
+
+.leaflet-wdstoolbar-submit.active {
+    background-image: url('images/loading.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
+}

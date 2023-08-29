@@ -1,0 +1,111 @@
+﻿@charset "utf-8";
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url('OpenSans.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Open Sans Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url('OpenSans-Bold.woff2') format('woff2');
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+#container {
+    margin: 0 auto;
+    width: 670px;
+}
+#content {
+    width: 100%;
+}
+.wds-risk-container {
+    border: 1.5px solid #6C6C6C;
+}
+
+/* Header */
+
+#header table {
+    width: 100%;
+}
+#header table tr td img {
+    width: 350px;
+    margin: 0 auto;
+    display: block;
+}
+#header table tr td {
+    font-size: 0.65em;
+    font-weight: 500;
+    width: 33%;
+}
+
+/* WDS Risk Container */
+
+#wds-risk-score {
+    height: 130px;
+    padding: 5px;
+    background-color: #17375E;
+    color: #EEECE1;
+}
+#risk-score {
+    font-size: 1.6em;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+#risk-score-description {
+    margin: 10px 50px 10px 50px;
+    font-size: 0.65em;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+/* Std Deviation Container */
+
+#std-deviation-container {
+    height: 25px;
+    padding: 10px 0 5px 0;
+    background-color: #A6B6CB;
+}
+#std-deviation-verbose {
+    font-size: 0.8em;
+}
+#std-deviation-svg {
+    height: 140px;
+    background-color: #D3DBE5;
+}
+
+/* Map */
+
+#map-container {
+    height: 330px;
+}
+#map {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+@media print {
+    body {
+        /*
+        Allow background-colors and background-images to print to PDF in Chrome.
+        In IE and Firefox, this setting must be checked in the page setup options.
+        */
+        -webkit-print-color-adjust: exact;
+    }
+}

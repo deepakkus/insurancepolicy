@@ -1,0 +1,5 @@
+/* Override the default TinyMCE font size */
+body, td, pre
+{
+    font-size: 12px;
+}

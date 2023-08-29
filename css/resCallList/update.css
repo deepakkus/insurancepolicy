@@ -1,0 +1,161 @@
+﻿.radioButtonGroup {
+    display: inline-block;
+    margin-right: 50px;
+}
+.radioButtonGroup > span > label {
+    display: inline;
+    margin-right: 10px;
+}
+#memberContainer {
+    width: 100%;
+    float: left;
+    margin: 0;
+    background-color: #EEE;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#memberContainer .cellFirst {
+    width: 40%;
+    float: left;
+    padding: 10px;
+    display: block;
+}
+#memberContainer .cellMiddle {
+    width: 30%;
+    float: left;
+    padding: 10px;
+    display: block;    
+}
+#memberContainer .cellLast {
+    width: 20%;
+    float: left;
+    padding: 10px;
+    display: block;    
+}
+.infoTable tr td:first-child {
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+}
+.infoTable td {
+    padding: 2px;
+}
+#preRisksContainer {
+    display: table-cell;
+    width: 100%;
+    background-color: #EEE;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    float: left;
+    margin-top: 15px;
+}
+#responseCallContainer {
+    display: table;
+    width: 100%;
+}
+#propertyAccessContainer {
+    display: table-cell;
+    width: 25%;
+}
+#callAttemptsContainer {
+    display: table-cell;
+    width: auto;
+    vertical-align: top;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+#formPropertyAccess {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+#formPropertyAccess input[type=text] {
+    width: 94%;
+}
+#formPropertyAccess textarea {
+    width: 96%;
+}
+#lnkAddNewCallAttempt {
+    margin-top: 6px;
+    cursor: pointer;
+}
+#formCallAttempt {
+    width: 98%;
+    background-color: #FCF8D9;
+    border: 1px solid #FFDA71;
+    border-radius: 3px;
+    padding: 10px 10px 0px 10px;
+}
+#formCallAttempt form {
+    border: none;
+}
+#formCallAttempt select {
+    width: 93%;
+}
+#formCallAttempt input[type=text] {
+    width: 90%;
+}
+#formCallAttempt .container {
+    display: table;
+    width: 100%;
+    padding-top: 5px;
+}
+#formCallAttempt .leftColumn {
+    display: table-cell;
+    width: 50%;
+    vertical-align: top;
+}
+#formCallAttempt .rightColumn {
+    display: table-cell;
+    width: 50%;
+    vertical-align: top;
+}
+.heading {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: bold;
+}
+#gridCallAttempts {
+    padding-top: 0;
+}
+
+#gridCallAttempts table.items tr td {
+    cursor: pointer;
+}
+.actionButton {
+    float: right;
+    margin-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.notBold {
+    font-weight: normal;
+}
+#resCallContainer {
+    padding: 3px 20px 20px 20px;
+    margin-top: 5px;
+    border-top: 1px solid #e6e6e6;
+}
+#closeButton {
+    padding-top: 6px;
+}
+#closeButtonImage {
+    background-image: url('/images/CloseButton.png');
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+#closeButtonImage:hover {
+    background-image: url('/images/CloseButtonHighlighted.png');
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+.saveAllButton {
+    float: left;
+    margin-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

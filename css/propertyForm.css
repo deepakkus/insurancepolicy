@@ -1,0 +1,56 @@
+.statusHistoryColumn
+{
+    float: left;
+    padding-left:10px;
+}
+.statusDropDownListWidth 
+{
+    width: 97%;
+}
+.grid-view 
+{
+    padding: 0 !important;
+}
+h3 
+{
+    padding-bottom: 5px;
+}
+
+/* Property Access */
+
+#formPropertyAccess {
+    border-radius: 3px;
+    padding-left: 10px;
+    margin-top: 15px;
+}
+#formPropertyAccess input[type=text] {
+    width: 94%;
+}
+#formPropertyAccess textarea {
+    width: 96%;
+}
+.radioButtonGroup {
+    display: inline-block;
+    margin-right: 50px;
+}
+.radioButtonGroup > span > label {
+    display: inline;
+    margin-right: 10px;
+}
+.notBold {
+    font-weight: normal;
+}
+
+/* WDS Risk table */
+#risk-table {
+    border:1px solid orange; 
+    padding:5px;margin:5px;
+}
+#risk-table th {
+    text-align:center;
+    font-weight:bold;
+}
+#risk-table td {
+    padding:1px 10px 1px 10px;
+    border: 1px dotted grey;
+}

@@ -1,0 +1,118 @@
+﻿/* ================================================================== */
+/* Toolbars
+/* ================================================================== */
+
+.leaflet-risktoolbar-section {
+    position: relative;
+}
+
+.leaflet-risktoolbar-toolbar {
+	margin-top: 8px;
+    display: inline-block;
+}
+
+.leaflet-risktoolbar-toolbar-top {
+	margin-top: 0;
+}
+
+.leaflet-risktoolbar a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Background Images */
+
+.leaflet-coordinates {
+    background-image: url('images/risk-spritesheet.png');
+    background-repeat: no-repeat;
+}
+
+.leaflet-retina .leaflet-coordinates {
+    background-image: url('images/risk-spritesheet-2x.png');
+    background-size: 52px 26px;
+}
+
+/* Coordinates Input */
+
+.leaflet-risktoolbar-toolbar-coord-wrap {
+    background: #fff;
+    border: 1px solid #999;
+    border-color: rgba(0,0,0,0.4);
+    overflow: hidden;
+    height: 54px;
+    width: 180px;
+    border-radius: 0 3px 3px 0;
+}
+
+.leaflet-risktoolbar-toolbar-coord-form {
+    width: 180px;
+}
+
+.leaflet-risktoolbar-toolbar-coord-form input {
+    border: 0;
+    font-size: inherit !important;
+    width: 180px !important;
+    padding: 0 0 0 10px !important;
+    margin: 0 !important;
+    height: 26px !important;
+}
+
+/* Risk Result */
+
+.leaflet-wdstoolbar-riskresult {
+    background: #fff;
+    border: 1px solid #999;
+    border-color: rgba(0,0,0,0.4);
+    border-radius: 0 3px 3px 0;
+    overflow: hidden;
+    height: 80px;
+    width: 180px;
+}
+
+.leaflet-wdstoolbar-riskresult table {
+    height: 80px;
+    width: 180px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.leaflet-wdstoolbar-riskresult table td {
+    height: 26px;
+    padding: 0;
+    margin: 0;
+}
+
+.leaflet-wdstoolbar-riskresult table .risk-results {
+    width: 1%;
+    white-space: nowrap;
+    padding: 0 10px 0 10px;
+}
+
+/* Marker Styles */
+
+.leaflet-wdstoolbar-riskmarker a:first-of-type {
+    display: block;
+    font-size: 1.4em;
+    color: darkblue;
+    margin: 2px 0;
+}
+
+.leaflet-wdstoolbar-riskmarker .leaflet-wdstoolbar-loading.active {
+    background-image: url('images/loading.gif');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 16px;
+    width: 16px;
+}
+
+/* Overriding Mapbox Geocoder styles */
+
+.leaflet-control-mapbox-geocoder-wrap,
+.leaflet-control-mapbox-geocoder-results,
+.leaflet-control-mapbox-geocoder-form,
+.leaflet-control-mapbox-geocoder-form input {
+    width: 280px !important;
+}

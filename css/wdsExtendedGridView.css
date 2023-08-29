@@ -1,0 +1,59 @@
+div.grid-view {
+    font-size: 0.9em;
+    padding-top: 20px;
+}
+
+div.grid-view table {
+    background-color: white;
+    border-spacing: 0;
+}
+
+div.grid-view table tfoot {
+    font-weight: bolder;
+    font-size: 140%;
+}
+
+div.grid-view table.items th a {
+    color: white !important;
+}
+
+div.grid-view table.items tr.odd td {
+    background-color: #EBEBEB;
+}
+
+div.grid-view table.items tr:hover td {
+    background-color: #FFF2C0;
+}
+
+div.grid-view table.items tr.selected td {
+    background-color: #FFDA66;
+}
+
+div.grid-view .filters .filter-container {
+    padding: 0;
+}
+
+.checkbox-column > input {
+    margin: 0 10px;
+}
+
+.bulk-actions-btn {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.grid-view table.items th, .grid-view table.items td {
+    font-size: inherit !important;
+}
+
+/* Make Columns fit to content */
+
+div.grid-view table input {
+    width: 100%;
+    margin: 0 auto;
+}
+
+div.grid-view table select {
+    width: 100%;
+    margin: 0 auto;
+}

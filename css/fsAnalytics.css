@@ -1,0 +1,101 @@
+/* 
+    Document   : fsAnalytics
+    Created on : Jul 8, 2013, 2:33:01 PM
+    Author     : ebarnes
+    Description: Styles specific to the fsAnalytics pages.
+*/
+
+#analyticsParamsForm 
+{
+    padding: 10px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#analyticsParamsForm .col
+{
+    width: 225px;
+    float: left;
+}
+.levelOfServiceBreakdownTable
+{
+    border: 1px solid #666E73;
+    width: 600px;
+    margin-top: 10px;
+    background-color: #666E73;
+}
+.levelOfServiceBreakdownTable td
+{
+    border: 1px solid #666E73;
+    text-align: center;
+    padding: 10px 0;
+}
+.levelOfServiceBreakdownTable td.grayedOut
+{
+    border: none;
+}
+.levelOfServiceBreakdownTable td.labelColor
+{
+    background-color: #ddd;
+}
+.levelOfServiceBreakdownTable td.lowColor
+{
+    background-color: #ffffaa;
+}
+.levelOfServiceBreakdownTable td.midColor
+{
+    background-color: #fddec4;
+}
+.levelOfServiceBreakdownTable td.highColor
+{
+    background-color: #ffb9a3;
+}
+.levelOfServiceBreakdownTable td.outerLabelColor 
+{
+    color: #fff;
+    font-weight: bold;
+}
+
+#gridConditionResponseSummary.grid-view 
+{
+    padding-top: 5px !important;
+}
+
+#summaryMetricsTable .whiteHeader
+{
+    background: none;
+    background-color: white;
+}
+#summaryMetricsTable .memberHeader
+{
+    background: none;
+    background-color: #B4B6AF;
+}
+#summaryMetricsTable .propertyHeader
+{
+    background: none;
+    background-color: #9EAA83;
+}
+
+#summaryMetricsTable .memberColumn
+{
+    background-color: rgba(197, 209, 175, .4);
+}
+#summaryMetricsTable .propertyColumn
+{
+    background-color: rgba(139, 162, 95, .4);
+}
+#summaryMetricsTable .additionalCompletedColumn
+{
+    background-color: rgba(131, 130, 37, .3);
+}
+#summaryMetricsTable .totalColumn
+{
+    background-color: rgba(214, 214, 85, .4);
+}
+
+#serviceLevelSummaryTable .header 
+{
+    background: none;
+    background-color: #7390AD;    
+}

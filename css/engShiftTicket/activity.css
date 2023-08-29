@@ -1,0 +1,135 @@
+.col_left
+{
+float:left;
+width:55%;
+}
+.col_left_2
+{
+float:left;
+width:55%;
+margin-top:15px;
+
+}
+.col_right
+{
+float:left;
+width:45%;
+}
+.col_comment
+{
+float:left;
+border:1px solid #ccc;
+width:80%;
+height:200px;
+padding-left:5px;
+padding-top:5px;
+background:#e1dddd;
+}
+.content_1
+{
+float:left;
+border:1px solid #ccc;
+width:50%;
+height:25px;
+padding-left:5px;
+padding-top:5px;
+background:#e1dddd;
+}
+.right_sect_1
+{
+float:left;
+width:50%;
+}
+.right_sect_2
+{
+float:left;
+width:50%;
+}
+.top_right
+{
+width:100%;
+float:left;
+}
+.top_right_2
+{
+width:100%;
+float:left;
+margin-top:15px;
+}
+.time_sect
+{
+    float:left;
+    width:100%;
+    margin-bottom:20px;
+    margin-top:35px;
+    border:1px solid #ccc;
+}
+.time_header
+{
+    float:left;
+    width:99%;
+    background:#f5f5f5;
+    padding:5px;
+    height:30px;
+}
+.header_info
+{
+float:left;
+width:99%;
+background:#f5f5f5;
+height:30px;
+padding:5px;
+}
+.assignment_title
+{
+    float:left;
+    width:99%;
+    margin-bottom:10px;
+    background:#f5f5f5;
+    height:30px;
+    padding: 5px;
+}
+.assignment_item1
+{
+    float:left;
+    width:22%;
+    padding-left:5px;
+    padding-bottom:5px;
+}
+.assignment_items_1
+{
+    float:left;
+    width:100%;
+}
+.assignment_items_2
+{
+    float:left;
+    width:100%;
+    margin-top:5px;
+}
+.assignment_info
+{
+    float:left;
+    width:100%;
+    border:1px solid #ccc;
+}
+.shiftticket_sect
+{
+    float:left;
+    width:100%;
+    border:1px solid #ccc;
+}
+.shift_ticket_content
+{
+    float:left;
+    width:100%;
+    padding-left:10px;
+    padding-bottom:20px;
+    padding-top:5px;
+}
+.print_buttons
+{
+    float:left;
+    width:100%;
+    margin-top:10px;
+}
